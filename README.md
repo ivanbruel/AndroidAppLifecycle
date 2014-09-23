@@ -1,7 +1,7 @@
 AndroidAppLifecycle
 ===================
 
-A small wrapper around activity lifecycles to provide actual Application lifecycle status with callbacks avoiding the implementation of the onResume() and onPause() calls on the Application class.
+A small wrapper around activity lifecycles to provide actual Application lifecycle status with callbacks.
 
 #Example Usage
 
