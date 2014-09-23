@@ -70,7 +70,7 @@ public class ApplicationLifecycle {
         if (mApplicationStatus == ApplicationStatus.FOREGROUND) {
             mApplicationStatus = ApplicationStatus.BACKGROUND;
             for (ApplicationLifecycleCallback callback : mCallbacks) {
-                callback.applicationWillEnterBackground();
+                callback.onPause();
             }
         }
     }
@@ -79,7 +79,7 @@ public class ApplicationLifecycle {
         if (mApplicationStatus == ApplicationStatus.BACKGROUND) {
             mApplicationStatus = ApplicationStatus.FOREGROUND;
             for (ApplicationLifecycleCallback callback : mCallbacks) {
-                callback.applicationWillEnterForeground();
+                callback.onResume();
             }
         }
     }

@@ -10,12 +10,12 @@ To register for callbacks all you need is a context from an activity or your app
 ```java
 ApplicationLifecycle.registerApplicationLifecycleCallback(mContext, new ApplicationLifecycleCallback() {
             @Override
-            public void applicationWillEnterForeground() {
+            public void onResume() {
                 flush();
             }
 
             @Override
-            public void applicationWillEnterBackground() {
+            public void onPause() {
                 stopFlushTimer();
             }
         });
