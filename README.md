@@ -1,7 +1,7 @@
 AndroidAppLifecycle
 ===================
 
-A small wrapper around activity lifecycles to provide actual Application lifecycle status with callbacks.
+A small wrapper around activity lifecycles to provide actual Application lifecycle status with callbacks. (API Level >= 14)
 
 #Example Usage
 
